@@ -1,0 +1,22 @@
+*.class
+*.log
+.idea
+.settings
+MBPLauncher/launch4j config-2.xml
+MBPLauncher/launch4j config.xml
+Java 1.6
+Marble Blast Platinum 1.50 copy.app
+Marble Blast Platinum 1.50.app
+.metadata
+*.exe
+*.zip
+MBPLauncher.jar
+runnable.jar
+*.app
+MBPLauncher/src/com/platinumteam
+MBPLauncher/dist
+MBPLauncher/lib/appbundler-1.0.src
+MBPLauncher/bin
+.recommenders
+MBLauncher.jar
+*.iml

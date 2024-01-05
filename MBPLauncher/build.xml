@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse.ant.import ?>
+
+<project name="Main" basedir=".">
+	<target name="make-runnable-jar">
+        <jar destfile="./dist/MBLauncher.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.marbleblast.mblauncher.Main"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="./bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="./lib/jgoodies-common-1.8.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./lib/jgoodies-forms-1.8.0.jar"/>
+        </jar>
+    </target>
+
+	<taskdef name="bundleapp"
+             classname="com.oracle.appbundler.AppBundlerTask"
+             classpath="lib/appbundler-new.jar" />
+	
+	<taskdef name="launch4j"
+		classname="net.sf.launch4j.ant.Launch4jTask"
+		classpath="lib/launch4j/launch4j.jar" />
+	
+    <target name="bundle-MBLauncher">
+        <bundleapp outputdirectory="../"
+            name="Marble Blast Launcher"
+            displayname="Marble Blast Launcher"
+            identifier="com.marbleblast.mblauncher.Main"
+            mainclassname="com.marbleblast.mblauncher.Main"
+        	icon="res/platinum.icns">
+
+            <classpath file="dist/MBLauncher.jar" />
+        </bundleapp>
+    	
+    	<launch4j
+			configFile="mbl4jconfig.xml"
+			jar="dist/MBLauncher.jar" />
+	</target>
+</project>

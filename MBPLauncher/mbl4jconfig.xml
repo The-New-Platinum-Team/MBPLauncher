@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>dist/MBLauncher.jar</jar>
+  <outfile>../Marble Blast Launcher.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <manifest></manifest>
+  <icon>../MBP_Icon.ico</icon>
+  <jre>
+    <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <minVersion>1.6.0</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.1.0.0</fileVersion>
+    <txtFileVersion>1.1.0</txtFileVersion>
+    <fileDescription>Marble Blast Launcher</fileDescription>
+    <copyright>2015 The Platinum Team, All Rights Reserved</copyright>
+    <productVersion>1.1.0.0</productVersion>
+    <txtProductVersion>1.1.0</txtProductVersion>
+    <productName>Marble Blast Launcher</productName>
+    <companyName>The Platinum Team</companyName>
+    <internalName>mbplauncher</internalName>
+    <originalFilename>Marble Blast Launcher.exe</originalFilename>
+  </versionInfo>
+</launch4jConfig>
