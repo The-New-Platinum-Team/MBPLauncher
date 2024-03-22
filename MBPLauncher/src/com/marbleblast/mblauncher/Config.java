@@ -7,7 +7,7 @@ import org.json.JSONObject;
 
 public class Config {
 	//Hardcoded because lazy
-	public static String configJson = "http://files.marbleblast.com/launcher/config.json";
+	public static String configJson = "http://marbleblast.com/files/launcher/config.json";
 	static Map<String, Object> jsonConfig;
 	
 	public static String thisOS = Utils.getOS();

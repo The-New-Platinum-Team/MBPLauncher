@@ -54,8 +54,8 @@ public class Main {
 					modManager = new ModManager();
 					try {
 						if (modManager.getNeedDefaultMods()) {
-							modManager.addMod("http://pq.marbleblast.com/config/config.json");
-							modManager.addMod("http://fubar.marbleblast.com/config/config.json");
+							modManager.addMod("http://marbleblast.com/pq/config/config.json");
+							// modManager.addMod("http://fubar.marbleblast.com/config/config.json"); rip fubar
 						}
 
                         // Check if PQ is already running so we can
@@ -118,8 +118,8 @@ public class Main {
 					//TODO - We need to make this dynamically load official mods from the Marble Blast server.
 					// This should not be hardcoded! 
 					if (modManager.getNeedDefaultMods()) {
-						modManager.addMod("http://pq.marbleblast.com/config/config.json");
-						modManager.addMod("http://fubar.marbleblast.com/config/config.json");
+						modManager.addMod("http://marbleblast.com/pq/config/config.json");
+						// modManager.addMod("http://fubar.marbleblast.com/config/config.json");
 					}
 					//frame = new MBPLauncherFrame(pq);
 					//frame.setVisible(true);
